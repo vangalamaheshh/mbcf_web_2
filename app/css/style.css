@@ -1,20 +1,4 @@
-﻿/*=============================================================
-    Authour URI: www.binarytheme.com
-    License: Commons Attribution 3.0
-
-    http://creativecommons.org/licenses/by/3.0/
-
-    100% To use For Personal And Commercial Use.
-    IN EXCHANGE JUST GIVE US CREDITS AND TELL YOUR FRIENDS ABOUT US
-   
-    ========================================================  */
-
-
-
-/*=======================================
-    GENERAL STYLES
-==================================================*/
-body {
+﻿body {
     font-family: 'Libre Baskerville', sans-serif;
     font-size:14px;
 }
@@ -42,10 +26,12 @@ h1 {
      font-size:50px ;
     font-weight:900!important;
 }
+
 h3 {
     line-height:30px;
     padding-bottom:20px;
 }
+
 h4 {
     line-height:20px;
     padding-bottom:20px;
@@ -102,6 +88,7 @@ section {
 .color-blue {
     color: #00A9DF;
 }
+
 /*=======================================
     HEADER STYLES
 ==================================================*/
@@ -138,32 +125,6 @@ nav {
     border-color: #4B4A4A;
 }
 
-/*=======================================
-    ABOUT STYLES
-==================================================*/
-
-.about-div {
-	width: 100%;
-    min-height: 100px;
-    background-color: rgba(209, 209, 209, 0.24);
-    box-shadow: none;
-    border: 0;
-    padding: 50px 20px 30px 20px;
-    margin-bottom:20px;
-}
-
-/*=======================================
-    FREE TEXT STYLES
-==================================================*/
-.free-div {
-    width: 100%;
-    min-height: 100px;
-    background-color: rgba(209, 209, 209, 0.24);
-    box-shadow: none;
-    border: 0;
-    padding: 50px 20px 30px 20px;
-    margin-bottom:20px;
-}
 
 /*=======================================
     CONTACT STYLES
@@ -184,9 +145,3 @@ nav {
     text-align:right;
 }
 
-/*=================
-Mahesh
-==================*/
-.icon-display:before {
-    content: "\e900";
-}

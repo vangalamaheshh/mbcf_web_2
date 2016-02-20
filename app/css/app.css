@@ -1,4 +1,4 @@
-.thumb img {
+.thumb > img {
     position: relative;
     float: right;
     width:  100px;
@@ -8,3 +8,33 @@
     background-size:     cover;
 }
 
+.icon-display:before {
+    content: "\e900";
+}
+
+.carousel {
+    height: auto; 
+    width: 60%; 
+    position: relative; 
+    margin: 0px auto;
+}
+
+.carousel-inner > .item > img {
+    width:640px;
+    height:360px;
+}
+
+
+.carousel-caption {
+    position: relative;
+    left: auto;
+    right: auto;
+}
+
+.carousel-indicators li {
+  background-color: #669966;
+}
+
+.carousel-indicators .active {
+  background-color: #FF7600;
+}

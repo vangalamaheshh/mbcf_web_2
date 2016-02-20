@@ -62,22 +62,58 @@
     </nav>
     <!--End Navigation -->
 
-    <!--About Section-->
+    <!-- Home Section-->
     <section class="for-full-back color-light " id="home">
         <div class="container">
 
             <div class="row text-center">
                 <div class="col-md-8 col-md-offset-2">
                     <h1>MBCF @ DFCI</h1>
-                    <h4>
-                        <strong>
-                          <p>Molecular Biology Core Facilities, Dana-Farber Cancer Institute.</p>
-                          <p>4th floor, 21-27 Burlington Avenue, Brookline, MA, 02215.</p>
-                        </strong>
-                    </h4>
+                </div>
+            </div>
+            <!-- Adding Carousel -->
+            <div id="carousel-example-generic" class="carousel slide" data-ride="carousel" data-interval="5000">
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                    <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+                    <li data-target="#carousel-example-generic" data-slide-to="4"></li>
+                </ol>
+ 
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner">
+                    <div class="item active">
+                        <img class="img-responsive center-block" src="app/img/nextseq.jpeg"/>
+                    </div>
+                    <div class="item">
+                        <img class="img-responsive center-block" src="app/img/miseq.jpeg"/>
+                    </div>
+                    <div class="item">
+                        <img class="img-responsive center-block" src="app/img/bioinformatics.jpeg"/>
+                    </div>
+                    <div class="item">
+                        <img class="img-responsive center-block" src="app/img/neoprep.jpeg"/>
+                    </div>
+                    <div class="item">
+                        <img class="img-responsive center-block" src="app/img/proteomics.jpeg"/>
+                    </div>
                 </div>
 
-            </div class="container">
+                <!-- Controls -->
+                <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev" 
+                        onclick="$('#carousel-example-generic').carousel('prev')">
+                    <span class="glyphicon glyphicon-chevron-left color-blue"></span>
+                </a>
+                <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next"
+                        onclick="$('#carousel-example-generic').carousel('next')">
+                    <span class="glyphicon glyphicon-chevron-right color-blue"></span>
+                </a>
+            </div> <!-- Carousel -->
+            <!-- END of CAROUSEL -->
+
+          </div class="container">
             <div class="row text-center">
                 <div class="col-md-12">
                     <h2 class="color-blue">About Core</h2>
@@ -171,7 +207,7 @@
 
     </section>  
    
-    <!--End About Section-->
+    <!--End Home Section-->
 
     <!-- Services Section-->
     <section class="for-full-back color-white" id="services">
