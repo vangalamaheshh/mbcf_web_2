@@ -12,10 +12,15 @@ mbcfWebApp.config(['$stateProvider', '$urlRouterProvider', '$locationProvider',
         requireBase: false
     });    
 
-    $urlRouterProvider.otherwise('/instrumentation');
+    $urlRouterProvider.otherwise('/');
     $stateProvider
         .state('/instrumentation', {
             url: '/instrumentation',
             templateUrl: '/app/partials/instrumentation.html'
+        })
+        .state('/', {
+            url: '/',
+            templateUrl: '/app/partials/instrumentation.html'
         });
 }]);
+
