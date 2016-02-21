@@ -3,7 +3,7 @@
 <!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
 <!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
 <!--[if (gte IE 9)|!(IE)]><!-->
-<html lang="en">
+<html lang="en" ng-app="mbcfWebApp">
 <!--<![endif]-->
 <head>
     <meta charset="utf-8">
@@ -29,6 +29,15 @@
       <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
     <![endif]-->
     <link href="app/css/app.css" rel="stylesheet" />
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
+    <!-- JAVASCRIPT FILES PLACED AT THE BOTTOM TO REDUCE THE LOADING TIME  -->
+    <!-- CORE JQUERY  -->
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <!-- BOOTSTRAP CORE SCRIPT   -->
+    <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+    <!-- CUSTOM SCRIPTS -->
+    <script src="app/js/custom.js"></script>
 </head>
 <body>
     <!-- Navigation -->
@@ -194,11 +203,6 @@
             <div class="row text-center">
                 <div class="col-md-8 col-md-offset-2">
                     <h1>OUR SERVICES</h1>
-                    <h4>
-                        <strong>
-                            Text regarding services offered.
-                        </strong>
-                    </h4>
                 </div>
 
             </div>
@@ -207,36 +211,76 @@
                 <div class="col-md-3 ">
 
                     <div class="about-div text-center ">
-
-                        <h3>What We Have</h3>
-                       <p>
-                         Description of our infrastructure. 
-                       </p>
-
+                          <ul>
+                          <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#"><h4>GENOMICS 
+                            <b class="caret"></b></h4></a>
+                            <ul class="dropdown-menu">
+                              <li><a href="#">Next-Generation Sequencing (NGS)</a></li>
+                              <li role="separator" class="divider"></li>
+                              <li><a href="#">NGS Library Prep</a></li>
+                              <li role="separator" class="divider"></li>
+                              <li><a href="#">Affymetrix Microarray</a></li>
+                              <li role="separator" class="divider"></li>
+                              <li><a href="#">Nanostring nCounter</a></li>
+                              <li role="separator" class="divider"></li>
+                              <li><a href="#">Sanger DNA Sequencing</a></li>
+                            </ul>
+                          </li>
+                          <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown"><h4>PROTEOMICS
+                            <b class="caret"></b></h4></a>
+                            <ul class="dropdown-menu">
+                              <li><a href="#">MALDI-TOF MS</a></li>
+                              <li role="separator" class="divider"></li>
+                              <li><a href="#">LC-MS/MS</a></li>
+                              <li role="separator" class="divider"></li>
+                              <li><a href="#">Amino Acid Analysis</a></li>
+                              <li role="separator" class="divider"></li>
+                              <li><a href="#">Peptide Synthesis</a></li>
+                              <li role="separator" class="divider"></li>
+                              <li><a href="#">Biacore 3000</a></li>
+                            </ul>
+                          </li>
+                          <li><a href="#"><h4>ADVANCED TECHNOLOGIES</h4></a></li>
+                          <li><a href="/instrumentation"><h4>INSTRUMENTATION</h4></a></li>
+                        </ul>
                     </div>
 
                 </div>
-                <div class="col-md-6 ">
-                    <p class="text-center">
-                        Dynamic load of content based on user selection.
-                    </p>  
-                    <p>
-                        Dynamic load of content. 
-                    </p>
-
-                    
+                <div class="col-md-6 " ui-view>
 
                 </div>
                 
                 <div class="col-md-3 ">
 
                     <div class="about-div text-center">
-
-                        <h3>What We Deliver</h3>
-                      
-                         <p>
-                            Setting customer expectations.
-                         </p>
+                        <ul>
+                          <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#"><h4>DFCI iLAB
+                            <b class="caret"></b></h4></a>
+                            <ul class="dropdown-menu">
+                              <li><a href="#">iLAB Login</a></li>
+                              <li role="separator" class="divider"></li>
+                              <li><a href="#">Create an iLAB Account</a></li>
+                              <li role="separator" class="divider"></li>
+                            </ul>
+                          </li>
+                          <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown"><h4>MBCF DNALIMS
+                            <b class="caret"></b></h4></a>
+                            <ul class="dropdown-menu">
+                              <li><a href="#">dnaLIMS Login</a></li>
+                              <li role="separator" class="divider"></li>
+                              <li><a href="#">Create dnaLIMS Account</a></li>
+                              <li role="separator" class="divider"></li>
+                            </ul>
+                          </li>
+                          <li><a href="#"><h4>MBCF DATA SERVER</h4></a></li>
+                          <li><a href="#"><h4>MICROARRAY DATA</h4></a></li>
+                          <li><a href="#" class="color-blue"><h4>SERVICE REQUEST GUIDE</h4></a></li>
+                          <li><a href="#"><h4>ACKNOWDEDGING THE CORE</h4></a></li>
+                        </ul>
                     </div>
 
                 </div>
@@ -325,13 +369,5 @@
          
     </div>
     <!--End footer Section -->
-    <!-- JAVASCRIPT FILES PLACED AT THE BOTTOM TO REDUCE THE LOADING TIME  -->
-    <!-- CORE JQUERY  -->
-    <script src="bower_components/jquery/dist/jquery.js"></script>
-    <!-- BOOTSTRAP CORE SCRIPT   -->
-    <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
-    <!-- CUSTOM SCRIPTS -->
-    <script src="app/js/custom.js"></script>
-
 </body>
 </html>
