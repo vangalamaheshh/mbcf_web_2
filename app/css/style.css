@@ -22,8 +22,8 @@ h1, h2, h3, h4, h5, h6 {
 h1 {
     line-height:120px;
     text-transform:uppercase;
-     color: #00A9DF;
-     font-size:50px ;
+    color: #00A9DF;
+    font-size:50px ;
     font-weight:900!important;
 }
 
