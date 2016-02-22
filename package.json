@@ -5,6 +5,7 @@
   "description": "MBCF website",
   "repository": "",
   "license": "MIT",
+  "main": "server.js",
   "devDependencies": {
     "bower": "^1.7.2",
     "http-server": "^0.8.5",

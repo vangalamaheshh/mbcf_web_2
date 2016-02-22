@@ -6,8 +6,8 @@ var port = 8000;
 
 app.use(express.static(__dirname + '/bower_components'));
 app.use(express.static(__dirname + '/app'));
-app.use('/bower_components',  express.static(__dirname + '/bower_components'));
-app.use('/app', express.static(__dirname + '/app'));
+//app.use('/bower_components',  express.static(__dirname + '/bower_components'));
+//app.use('/app', express.static(__dirname + '/app'));
 
 // routes will go here
 app.get('/', function(request, response){
@@ -16,6 +16,7 @@ app.get('/', function(request, response){
 
 app.post('/', function(request, response) {
     console.log("Req:" + request);
+    response.send();
 });
 
 // start the server
