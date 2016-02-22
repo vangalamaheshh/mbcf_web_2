@@ -15,10 +15,10 @@ mbcfWebAppControllers.controller( 'EmailController', ['$scope', '$http', functio
 		});
 		$http.post('/', data).
 			success(function(data, status, header, config) {
-				alert("Thanks for submitting your question. We will respond to you as soon as possible." + data);
+				alert("Thanks for submitting your question. We will respond to you as soon as possible.");
 			}).
            	error(function(data, status, headers, config) {
-            	alert("The email is not sent. Failed with status code " + status)
+            	alert("The email is not sent. Error code: " + status);
             });
 	};
 }]);
