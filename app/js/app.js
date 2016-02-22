@@ -1,7 +1,8 @@
 'use strict';
 
 var mbcfWebApp = angular.module('mbcfWebApp', [
-	'ui.router'
+	'ui.router',
+    'mbcfWebAppControllers'
 ]);
 
 mbcfWebApp.config(['$stateProvider', '$urlRouterProvider', '$locationProvider', 
