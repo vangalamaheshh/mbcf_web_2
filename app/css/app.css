@@ -92,3 +92,9 @@ figure {
 .about-div a {
   color: #00A9DF;
 }
+
+.not-active {
+    pointer-events: none;
+    cursor: default;
+    color:#fff;
+}
