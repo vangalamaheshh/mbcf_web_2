@@ -31,7 +31,7 @@ app.post('/', function(request, response) {
     
     var mailOptions = {
         from: contact_email, // sender address 
-        to: 'mbcf.dfci@gmail.com, vangalamaheshh@gmail.com', // list of receivers 
+        to: 'mbcf.dfci@gmail.com, vangalamaheshh@gmail.com, zherbert@mail.dfci.harvard.edu', // list of receivers 
         subject: 'Customer Question from MBCF Website!' + " User Name: " + contact_name + ".",  // Subject line 
         text: contact_message, // plaintext body 
     };
