@@ -98,3 +98,21 @@ figure {
     cursor: default;
     color:#fff;
 }
+
+#MBCF-title {
+    padding-top: 50px;
+    line-height:25px;
+    text-transform:uppercase;
+    color: #00A9DF;
+    font-size:30px ;
+    font-weight:900!important;
+}
+
+#MBCF-caption {
+    padding-top: 5px;
+    line-height:25px;
+    text-transform:uppercase;
+    color: #00A9DF;
+    font-size:20px ;
+    font-weight:900!important;
+}
