@@ -65,7 +65,7 @@ mbcfWebApp.config(['$stateProvider', '$urlRouterProvider', '$locationProvider',
         })
         .state('/', {
             url: '/',
-            templateUrl: '/app/partials/instrumentation.html'
+            templateUrl: '/app/partials/ngs.html'
         });
 }]);
 
