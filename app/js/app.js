@@ -65,7 +65,7 @@ mbcfWebApp.config(['$stateProvider', '$urlRouterProvider', '$locationProvider',
         })
         .state('/service-request-guide', {
             url: '/service-request-guide',
-            templateUrl: '/app/partials/biacore.html'
+            templateUrl: '/app/partials/service-request-guide.html'
         })
         .state('/', {
             url: '/',
