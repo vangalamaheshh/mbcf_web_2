@@ -8,11 +8,11 @@ var mbcfWebApp = angular.module('mbcfWebApp', [
 mbcfWebApp.config(['$stateProvider', '$urlRouterProvider', '$locationProvider', 
         function($stateProvider, $urlRouterProvider, $locationProvider) {
 
-    $locationProvider.html5Mode({
+/*    $locationProvider.html5Mode({
         enabled: true,
         requireBase: false
     });    
-
+*/
     $urlRouterProvider.otherwise('/');
     $stateProvider
         .state('/instrumentation', {
@@ -62,6 +62,10 @@ mbcfWebApp.config(['$stateProvider', '$urlRouterProvider', '$locationProvider',
         .state('/adv-tech', {
             url: '/adv-tech',
             templateUrl: '/app/partials/adv-tech.html'
+        })
+        .state('/service-request-guide', {
+            url: '/service-request-guide',
+            templateUrl: '/app/partials/biacore.html'
         })
         .state('/', {
             url: '/',
