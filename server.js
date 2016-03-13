@@ -28,23 +28,29 @@ app.post('/', function(request, response) {
     var contact_name = request.body.contact_name;
     var contact_email = request.body.contact_email;
     var contact_message = request.body.contact_message;
-    
-    var mailOptions = {
-        from: contact_email, // sender address 
-        to: 'mbcf.dfci@gmail.com, vangalamaheshh@gmail.com', // list of receivers 
-        subject: 'Customer Question from MBCF Website!' + " User Name: " + contact_name + "; " + "User Email: " + contact_email,   // Subject line 
-        text: contact_message, // plaintext body 
-    };
 
-    transporter.sendMail(mailOptions, function(error, info){
-        if(error){
-            console.log(error);
+    if( ! contact_name || ! contact_email || ! contact_message ) {
             response.status(550);
-            response.send("Your message failed to be sent.");
+            response.send("Name, Email and Message fields are required.");
         }
-        console.log('Message sent: ' + info.response);
-        response.send(info.response);
-    });
+    else {    
+        var mailOptions = {
+            from: contact_email, // sender address 
+            to: 'mbcf.dfci@gmail.com, vangalamaheshh@gmail.com', // list of receivers 
+            subject: 'Customer Question from MBCF Website!' + " User Name: " + contact_name + "; " + "User Email: " + contact_email,   // Subject line 
+            text: contact_message, // plaintext body 
+        };
+
+        transporter.sendMail(mailOptions, function(error, info){
+            if(error){
+                console.log(error);
+                response.status(550);
+                response.send("Your message failed to be sent.");
+            }
+            console.log('Message sent: ' + info.response);
+            response.send(info.response);
+        });
+    }
 });
 
 // start the server
